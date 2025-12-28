@@ -1,0 +1,75 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Amit Sharma",
+      "email": "amit.sharma@gmail.com",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "name": "Neha Verma",
+      "email": "neha.verma@gmail.com",
+      "role": "user"
+    }
+  ],
+
+  "categories": [
+    {
+      "id": 1,
+      "name": "Breakfast"
+    },
+    {
+      "id": 2,
+      "name": "Lunch"
+    },
+    {
+      "id": 3,
+      "name": "Dinner"
+    }
+  ],
+
+  "recipes": [
+    {
+      "id": 101,
+      "name": "Paneer Butter Masala",
+      "categoryId": 2,
+      "ingredients": ["Paneer", "Butter", "Tomato", "Cream", "Spices"],
+      "isVegetarian": true,
+      "cookTimeMinutes": 30
+    },
+    {
+      "id": 102,
+      "name": "Masala Dosa",
+      "categoryId": 1,
+      "ingredients": ["Rice Batter", "Potato", "Mustard Seeds", "Curry Leaves"],
+      "isVegetarian": true,
+      "cookTimeMinutes": 20
+    },
+    {
+      "id": 103,
+      "name": "Chicken Curry",
+      "categoryId": 3,
+      "ingredients": ["Chicken", "Onion", "Garlic", "Spices"],
+      "isVegetarian": false,
+      "cookTimeMinutes": 45
+    }
+  ],
+
+  "orders": [
+    {
+      "id": 1001,
+      "userId": 2,
+      "recipeId": 101,
+      "quantity": 1,
+      "status": "completed"
+    },
+    {
+      "id": 1002,
+      "userId": 2,
+      "recipeId": 102,
+      "quantity": 2,
+      "status": "pending"
+    }
+  ]
+}
